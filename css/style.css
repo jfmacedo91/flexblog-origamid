@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+body {
+  color: #fafaf9;
+  background-color: #1c1917;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.superinfo-bg {
+  padding: 0.5rem;
+  background-color: #064e3b;
+}
+
+.superinfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+.menu-bg {
+  padding: 1rem;
+  background-color: #065f46;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+.menu-logo a {
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+
+.menu nav ul {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.menu nav a {
+  display: block;
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  transition: all 200ms;
+}
+
+.menu nav a:hover {
+  color: #6ee7b7;
+}
+
+.introduction {
+  font-size: 3rem;
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 3.75rem 0.5rem;
+}
+
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 3.75rem 0.5rem;
+  border-block: 2px solid #064e3b;
+}
+
+.about-info {
+  flex: 2 1 300px;
+}
+
+.about-info h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.about-info p {
+  font-size: 1.25rem;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+  color: #a8a29e;
+}
+
+
+.about-image {
+  flex: 1 1 160px;
+}
+
+.about-image img {
+  width: 100%;
+}
