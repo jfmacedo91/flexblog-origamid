@@ -7,7 +7,7 @@
 
 body {
   color: #fafaf9;
-  background-color: #1c1917;
+  background-color: #18181b;
 }
 
 ul {
@@ -268,4 +268,132 @@ img {
   .price-item:nth-child(3) {
     order: -2;
   }
+}
+
+.quality {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 3.75rem 0.5rem;
+}
+
+.quality-item {
+  flex: 1 1 18rem;
+}
+
+.quality-item h2 {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+  font-size: 2.25rem;
+  color: #71717A;
+}
+
+.quality-item h2::before {
+  content: "";
+  width: 0.5rem;
+  height: 1.75rem;
+  background-color: #047857;
+}
+
+.quality-item:nth-of-type(3n + 1) h2::before {
+  background-color: #AE81FF;
+}
+
+.quality-item:nth-of-type(3n + 2) h2::before {
+  background-color: #F9265E;
+}
+
+.quality-item:nth-of-type(3n + 3) h2::before {
+  background-color: #66B9EB;
+}
+
+.quality-item p {
+  font-size: 1.25rem;
+  line-height: 1.4;
+  color: #A1A1AA;
+}
+
+.newsletter {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3.75rem calc((100% - 59rem)/2);
+  background-color: #27272A;
+}
+
+.newsletter-info {
+  flex: 1 1 17rem;
+  padding-inline: 0.5rem;
+}
+
+.newsletter-info h1 {
+  font-size: 3rem;
+  color: #71717A;
+}
+
+.newsletter-info p {
+  max-width: 15rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  font-style: italic;
+  color: #A1A1AA;
+}
+
+.newsletter-form {
+  flex: 2 1 17rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-self: center;
+  padding-inline: 0.5rem;
+}
+
+.newsletter-form input {
+  flex: 3 1 12.5rem;
+  padding: 0.5rem;
+  font-size: 1.25rem;
+  font-style: italic;
+  border: 0.25rem solid #064E3B;
+  color: #A1A1AA;
+  background-color: transparent;
+}
+
+.newsletter-form input:focus {
+  background-color: #18181B;
+  outline: none;
+}
+
+.newsletter-form button {
+  flex: 1 1 12.5rem;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 0.25rem solid #064E3B;
+  border-left: none;
+  color: inherit;
+  background-color: #064E3B;
+  cursor: pointer;
+  transition: all 200ms;
+}
+
+.newsletter-form button:hover {
+  background-color: #047857;
+}
+
+@media (max-width: 600px) {
+  .newsletter-form button {
+    font-size: 1.5rem;
+  }
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.75rem;
+  font-size: 1.25rem;
+  text-align: center;
+  background-color: #064E3B;
 }
